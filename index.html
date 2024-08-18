@@ -1,27 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style.css">
-<link href="./logo-64.png" rel="shortcut icon" type="image/png" />
-<title>Grupos de PHPost</title>
+<title>Nuestros grupos</title>
+<link href="https://ui-avatars.com/api/?background=444444&color=fff&name=phpost&size=64&font-size=0.50&bold=true&format=png" rel="shortcut icon" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+	:root {
+		--rounded: .325rem;
+	}
+	*, *::after, *::before {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	html, body {
+		width: 100%;
+		height: 100vh;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font: normal normal 400 1rem/1.5rem 'Roboto', sans-serif;
+		background-color: #212121;
+		color: #FFF;
+	}
+	a {
+		text-decoration: none!important;
+		color: inherit;
+	}
+	.button {
+		border-radius: var(--rounded);
+		background-color: #111;
+	}
+	.red {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 1rem;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			column-gap: .5rem;
+			padding: 0.5rem 1rem;
+		}
+	}
+	.box {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 3rem 1rem;
+		h1 {
+			display: block;
+			margin-bottom: 2rem;
+		}
+		a {
+			display: block;
+			margin-bottom:  1rem;
+			padding: 0.5rem 1.5rem;
+			width: max-content;
+		}
+	}
+	
+</style>
 </head>
 <body>
 	
-	<div class="box--content flex-column-center">
-		<template id="clone-template-social">
-		  	<div class="box--content__item">
-		    	<a href="#" target="_blank" rel="external" title="" class="item--logo flex-column-center">
-		      	<span class="item--icon iconify" data-icon=""></span>
-		      	<span class="item--link"><strong></strong></span>
-		    	</a>
-		  	</div>
-		</template>
+	<main>
+		<div class="box">
+			<h1>Ya puedes descargar ZCode v1.6.1</h1>
+			<a class="button" href="https://sourceforge.net/projects/zcode-script/files/latest/download">
+				Descarga desde Sourceforge
+			</a>
+			<a class="button" href="https://github.com/ScriptParaPHPost/ZCode/archive/refs/tags/v1.6.1.zip">
+				Descarga desde Github (directa)
+			</a>
+			<a class="button" href="https://zcode.newluckies.com/feed/">
+				Descarga desde Feed
+			</a>
+		</div>
+		<div class="red">
+			<a class="button" href="https://t.me/PHPost23" target="_blank">
+				<iconify-icon icon="logos:telegram"></iconify-icon>
+				<span>PHPost & ZCode</span>
+			</a>
+			<a class="button" href="https://discord.gg/mx25MxAwRe" target="_blank">
+				<iconify-icon icon="logos:discord-icon"></iconify-icon>
+				<span>PHPost & ZCode</span>
+			</a>
+		</div>
+	</main>
 
-	</div>
 
-	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-	<script src="./app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2"></script>
 </body>
 </html>
